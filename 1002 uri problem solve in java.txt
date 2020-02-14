@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Main{
+ 
+ public static void main(String[]args)
+{
+     
+   Scanner input=new Scanner(System.in);
+ 
+   double R;
+ 
+   double A;
+ 
+   R=input.nextDouble();
+
+   A=3.14159*R*R;
+
+   System.out.printf("A=%.4f\n",A);
+ 
+   }
+
+}
