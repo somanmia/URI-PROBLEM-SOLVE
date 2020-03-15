@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String[]args){
+        Scanner input=new Scanner(System.in);
+        int ck=0;
+        for(int i=1;i<=6;i++){
+            double x=input.nextDouble();
+            if(x>0){
+                ck++;
+            }
+        }
+        System.out.printf("%d valores positivos\n",ck);
+    }
+}
