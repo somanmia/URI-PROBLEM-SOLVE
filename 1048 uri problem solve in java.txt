@@ -1,0 +1,45 @@
+import java.util.Scanner;
+public class Main{
+public static void main(String[]args){
+double totalsum,persentage,salaryincrease;
+Scanner input=new Scanner(System.in);
+double x=input.nextDouble();
+if(0<=x && x<=400.00){
+  salaryincrease=(x*15)/100;
+  totalsum=x+salaryincrease;
+  System.out.printf("Novo salario: %.2f\n",totalsum);
+  System.out.printf("Reajuste ganho: %.2f\n",salaryincrease);
+  System.out.println("Em percentual: 15 %");
+}else if(400.01<=x && x<=800.00){
+  salaryincrease=(x*12)/100;
+  totalsum=x+salaryincrease;
+  System.out.printf("Novo salario: %.2f\n",totalsum);
+  System.out.printf("Reajuste ganho: %.2f\n",salaryincrease);
+  System.out.println("Em percentual: 12 %");
+
+}else if(800.01<=x && x<=1200.00){
+  salaryincrease=(x*10)/100;
+  totalsum=x+salaryincrease;
+  System.out.printf("Novo salario: %.2f\n",totalsum);
+  System.out.printf("Reajuste ganho: %.2f\n",salaryincrease);
+  System.out.println("Em percentual: 10 %");
+
+}else if(1200.01<=x && x<=2000.00){
+  salaryincrease=(x*7)/100;
+  totalsum=x+salaryincrease;
+  System.out.printf("Novo salario: %.2f\n",totalsum);
+  System.out.printf("Reajuste ganho: %.2f\n",salaryincrease);
+  System.out.println("Em percentual: 7 %");
+
+}else if(2000.00<x){
+  salaryincrease=(x*4)/100;
+  totalsum=x+salaryincrease;
+  System.out.printf("Novo salario: %.2f\n",totalsum);
+  System.out.printf("Reajuste ganho: %.2f\n",salaryincrease);
+  System.out.println("Em percentual: 4 %");
+
+  
+}
+}
+
+}
