@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class Main{
+public static void main(String[]args){
+int x;
+Scanner input=new Scanner(System.in);
+int n=input.nextInt();
+for(int i=1;i<=n;i++){
+  x=input.nextInt();
+  if(x==0){
+   System.out.println("NULL");
+  }else if(x%2==0){
+     System.out.print("EVEN"+" ");
+	 if(x>0){
+	 
+	   System.out.print("POSITIVE\n");
+	 }else{
+	  System.out.print("NEGATIVE\n");
+	 }
+  }else{
+      System.out.print("ODD"+" ");
+	   if(x>0){
+	    System.out.print("POSITIVE\n");
+	   }else{
+	    System.out.print("NEGATIVE\n");
+	   }
+  
+  }
+  }
+}
+}
