@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class Main{
+public static void main(String[]args){
+ Scanner input=new Scanner(System.in);
+ int even=0;
+ int odd=0;
+ int positive=0;
+ int negetive=0;
+ for(int i=1;i<=5;i++){
+   int x=input.nextInt();
+   if(x%2==0){
+       even++;
+   }else{
+      odd++;
+   }if(x>0){
+     positive++;
+   }else if(x<0){
+    negetive++;
+   }
+ }
+System.out.printf("%d valor(es) par(es)\n",even);
+System.out.printf("%d valor(es) impar(es)\n",odd);
+System.out.printf("%d valor(es) positivo(s)\n",positive);
+System.out.printf("%d valor(es) negativo(s)\n",negetive);
+}
+}
