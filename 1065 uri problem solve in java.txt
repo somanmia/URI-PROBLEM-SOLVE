@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Main{
+public static void main(String[]args){
+  int  pos=0;
+  int x;
+  Scanner input=new Scanner(System.in);
+  for(int i=1;i<=5;i++){
+     x=input.nextInt();
+	if(x%2==0){
+	  pos++;
+	}
+  }
+  System.out.printf("%d valores pares\n",pos);
+}
+}
