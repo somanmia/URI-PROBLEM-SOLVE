@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Main{
+public static void main(String[]args){
+  Scanner input=new Scanner(System.in);
+  int n=input.nextInt();
+  int x,i,in=0,out=0;
+  
+  for(i=1;i<=n;i++){
+     x=input.nextInt();
+	 if(x>=10 && x<=20){
+	   in++;
+	 }else{
+	   out++;
+	 }
+  }
+System.out.printf("%d in\n",in);
+System.out.printf("%d out\n",out);
+}
+}
