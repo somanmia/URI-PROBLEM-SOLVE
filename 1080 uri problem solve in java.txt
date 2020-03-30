@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Main{
+public static void main(String[]args){
+int n,maxnum=0,position=0;
+Scanner input=new Scanner(System.in);
+
+for(int i=1;i<=100;i++){
+n=input.nextInt();
+if(n>maxnum){
+ maxnum=n;
+ position=i;
+}else{
+  maxnum=maxnum;
+  position=position;
+}
+}
+ System.out.print(maxnum+"\n"+position+"\n");
+}
+}
