@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class Main{
+  public static void main(String[]args){
+  int i,m,n,temp,sum;
+  Scanner input=new Scanner(System.in);
+  while(true){
+      m=input.nextInt();
+      n=input.nextInt();
+    
+    if(m>n){
+      temp=m;
+      m=n;
+      n=temp;
+    }
+    if(m<=0 || n<=0){
+     break;
+    }else{
+        sum=0;
+      for(i=m;i<=n;i++){
+      sum=sum+i;
+      System.out.print(i+" ");
+    }
+     System.out.printf("Sum=%d\n",sum);
+    }
+    }
+    }
+    
+    }
