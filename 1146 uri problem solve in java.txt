@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class Main{
+public static void main(String[]args){
+ Scanner input=new Scanner(System.in);
+ int i,x;
+ while(true){
+  x=input.nextInt();
+  if(x==0){
+   break;
+  }
+  System.out.print("1");
+  for(i=2;i<=x;i++){
+   System.out.print(" "+i);
+  }
+  System.out.print("\n");
+ }
+}
+}
