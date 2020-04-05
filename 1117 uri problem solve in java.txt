@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class Main{
+public static void main(String[]args){
+Scanner input=new Scanner(System.in);
+double x,sum,avg;
+sum=0;
+int ck=0;
+while(true){
+ if(ck==2){
+    break;
+   }
+   x=input.nextDouble();
+  
+   if(x>=0 && x<=10){
+     ck++;
+      sum=sum+x;
+   }else{
+    System.out.print("nota invalida");
+   }
+}
+avg=sum/ck;
+System.out.printf("media = %.2f\n",avg);
+}
+}
