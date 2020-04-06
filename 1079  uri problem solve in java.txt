@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class Main{
+public static void main(String[]args){
+ Scanner input=new Scanner(System.in);
+ double x,y,z,sum=0;
+ int N,i;
+ N=input.nextInt();
+ for(i=1;i<=N;i++){
+    x=input.nextDouble();
+    y=input.nextDouble();
+    z=input.nextDouble();
+	sum=((x*2)/10)+((y*3)/10)+((z*5)/10);
+	System.out.printf("%.1f\n",sum);
+ }
+}
+}
