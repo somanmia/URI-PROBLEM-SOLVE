@@ -1,0 +1,41 @@
+import java.util.Scanner;
+public class Main{
+public static void main(String[]args){
+Scanner input=new Scanner(System.in);
+double a,b,c,temp;
+a=input.nextDouble();
+b=input.nextDouble();
+c=input.nextDouble();
+if(a<b){
+  temp=b;
+  b=a;
+  a=temp;
+}if(a<c){
+  temp=c;
+  c=a;
+  a=temp;
+}if(b<c){
+   temp=c;
+   c=b;
+   b=temp;
+}
+double x=a*a;
+double y=b*b;
+double z=c*c;
+if(a>=b+c){
+ System.out.print("NAO FORMA TRIANGULO\n");
+}else{
+  if(x==y+z){
+  System.out.print("TRIANGULO RETANGULO\n");
+  }if(x>y+z){
+    System.out.print("TRIANGULO OBTUSANGULO\n");
+  }if(x<y+z){
+    System.out.print("TRIANGULO ACUTANGULO\n");
+  }if(a==b && b==c){
+     System.out.print("TRIANGULO EQUILATERO\n");
+  }else if(a==b || b==c || c==a){
+    System.out.print("TRIANGULO ISOSCELES\n");
+  }
+}
+}
+}

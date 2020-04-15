@@ -1,0 +1,12 @@
+public class Main{
+public static void main(String[]args){
+int i;
+double sum=0;
+int j=1;
+for(i=1;i<=39;i=i+2){
+  sum+=(double)i/j;
+  j=j+j;
+}
+System.out.printf("%.2f\n",sum);
+}
+}
