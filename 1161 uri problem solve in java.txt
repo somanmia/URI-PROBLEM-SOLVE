@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner input=new Scanner(System.in);
+        long result;
+        long fact1,fact2,x,y;
+        while(input.hasNextLong()){
+            result=0;
+            fact1=1;
+            fact2=1;
+           x=input.nextLong();
+           y=input.nextLong();
+           for(int i=1;i<=x;i++){
+              fact1=fact1*i;
+           }
+           for(int j=1;j<=y;j++){
+             fact2=fact2*j;
+           }
+           result=fact1+fact2;
+           System.out.print(result+"\n");
+        }
+        
+    }
+}
