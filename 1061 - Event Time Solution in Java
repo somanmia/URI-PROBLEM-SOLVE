@@ -1,0 +1,48 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args) {
+        Scanner input=new Scanner(System.in);
+        String str1,str2,str3,str4,str5,str6;
+        int d1,d2,h2,h1,m1,m2,s1,s2,duration,ts1,ts2,day,hour,munit,second;
+        // First Step----------//
+        input.next();
+        d1=input.nextInt();
+        
+        h1=input.nextInt();
+        input.next();
+        m1=input.nextInt();
+        input.next();
+        s1=input.nextInt();
+        
+        input.next();
+        d2=input.nextInt();
+        
+        h2=input.nextInt();
+        input.next();
+        m2=input.nextInt();
+        input.next();
+        
+        s2=input.nextInt();
+        
+        ts2=(s2+(m2*60)+(h2*3600)+(d2*86400));
+        ts1=(s1+(m1*60)+(h1*3600)+(d1*86400));
+        
+        duration=ts2-ts1;
+
+        day=duration/86400;
+        duration=duration%86400;
+
+        hour=duration/3600;
+        duration=duration%3600;
+
+        munit=duration/60;
+        second=duration%60;
+        
+        System.out.printf("%d dia(s)\n",day);
+        System.out.printf("%d hora(s)\n",hour);
+        System.out.printf("%d minuto(s)\n",munit);
+        System.out.printf("%d segundo(s)\n",second);
+        
+        
+    }
+}
