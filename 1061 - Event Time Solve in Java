@@ -1,0 +1,58 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args) {
+        Scanner input=new Scanner(System.in);
+         String str1,str2,x,y,z,x2,y2,z2;
+         int d1,d2,h1,h2,m1,m2,s1,s2,duration,ts1,ts2,day,hour,munit,second;
+         str1=input.next();
+         d1=input.nextInt();
+         input.nextLine();
+         
+         String userinput=input.nextLine();
+         String data[]=userinput.split(" : ");
+         x=data[0];
+         y=data[1];
+         z=data[2];
+         
+         h1=Integer.parseInt(x);
+         m1=Integer.parseInt((y));
+         s1=Integer.parseInt(z);
+         
+         str2=input.next();
+         d2=input.nextInt();
+         input.nextLine();
+         
+         String userinput2=input.nextLine();
+         String data2[]=userinput2.split(" : ");
+         x2=data2[0];
+         y2=data2[1];
+         z2=data2[2];
+         
+         h2=Integer.parseInt(x2);
+         m2=Integer.parseInt(y2);
+         s2=Integer.parseInt(z2);
+         
+          ts2=(s2+(m2*60)+(h2*3600)+(d2*86400));
+        ts1=(s1+(m1*60)+(h1*3600)+(d1*86400));
+        
+        duration=ts2-ts1;
+
+        day=duration/86400;
+        duration=duration%86400;
+
+        hour=duration/3600;
+        duration=duration%3600;
+
+        munit=duration/60;
+        second=duration%60;
+        
+        System.out.printf("%d dia(s)\n",day);
+        System.out.printf("%d hora(s)\n",hour);
+        System.out.printf("%d minuto(s)\n",munit);
+        System.out.printf("%d segundo(s)\n",second);
+        
+          
+          
+         
+    }
+}
