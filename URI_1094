@@ -1,0 +1,45 @@
+import java.util.Scanner;
+public class Main{
+  public static void main(String[] args) {
+   Scanner input=new Scanner(System.in);
+   int total_coains=0,r=0,s=0,c=0,i,N,number;
+   double ravg,savg,cavg;
+
+   String str="";  
+    N=input.nextInt();
+    for(i=1;i<=N;i++){
+          number=input.nextInt();
+          str=input.next();
+      
+          if(str.equalsIgnoreCase("R")){
+               r+=number;
+               
+          }else if(str.equalsIgnoreCase("S")){
+               s+=number;
+               
+          }else if(str.equalsIgnoreCase("C")){
+               c+=number;
+               
+          }
+    }
+    total_coains=c+r+s;
+    cavg=(float)100.00*c/total_coains;
+    ravg=(float)100.00*r/total_coains;
+    savg=(float)100.00*s/total_coains;
+    
+    System.out.printf("Total: %d cobaias\n",total_coains);
+    System.out.printf("Total de coelhos: %d\n", c);
+    System.out.printf("Total de ratos: %d\n", r);
+    System.out.printf("Total de sapos: %d\n", s);
+    
+    System.out.printf("Percentual de coelhos: %.2f", cavg);
+    System.out.print(" %\n");
+    System.out.printf("Percentual de ratos: %.2f", ravg);
+     System.out.print(" %\n");
+     System.out.printf("Percentual de sapos: %.2f",savg);
+     System.out.print(" %\n");
+    
+}
+  
+}
+ 
