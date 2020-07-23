@@ -1,0 +1,38 @@
+import java.util.Scanner;
+public class Main{
+   public static void main(String[] args) {
+   Scanner input=new Scanner(System.in);
+   int x,y,T,inter=0,gremio=0,empates=0,total_match=0;
+   while(true){
+       x=input.nextInt();
+       y=input.nextInt();
+       total_match++;
+       System.out.println("Novo grenal (1-sim 2-nao)");
+       if(x>y){
+           inter++;
+       }else if(x<y){
+           gremio++;
+       }else{
+           empates++;
+       }
+       T=input.nextInt();
+       if(T==1){
+           continue;
+       }else{
+           break;
+       }
+   }
+   System.out.printf("%d grenais\n",total_match);
+   System.out.printf("Inter:%d\n",inter);
+   System.out.printf("Gremio:%d\n",gremio);
+   System.out.printf("Empates:%d\n",empates);
+   if(inter>gremio){
+       System.out.println("Inter venceu mais");
+   }else if(gremio<inter){
+       System.out.println("Gremio venceu mais");
+   }else{
+       System.out.println("Não houve vencedor");
+   }
+}
+ 
+}
