@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args) {
+        Scanner input=new Scanner(System.in);
+        int i,n,x,number;
+        String str;
+        n=input.nextInt();
+        for(i=1;i<=n;i++){
+            str=input.next();
+            number=input.nextInt();
+           if(str.equals("Thor")){
+               System.out.println("Y");
+           }else{
+               System.out.println("N");
+           }
+        }
+               
+    }
+}
