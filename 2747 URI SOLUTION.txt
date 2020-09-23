@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Main{
+public static void main(String[]args){
+     int row,col;
+for(row=0;row<7;row++){
+	for(col=0;col<39;col++){
+		if(row==0 || row==6){
+		   System.out.print("-");
+		}else if(col==0 || col==38){
+		   System.out.print("|");
+		
+		}else{
+		  System.out.print(" ");
+		}
+	
+	
+	}
+	System.out.print("\n");
+
+}
+
+
+}
+
+}

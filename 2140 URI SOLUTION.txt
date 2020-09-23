@@ -1,0 +1,39 @@
+import java.util.Scanner;
+public class Main{
+public static void main(String[]args){
+Scanner input=new Scanner(System.in);
+int array[]={2, 5, 10, 20, 50 ,100};
+int M,N,ck,between,i;
+while(true){
+  M=input.nextInt(); 
+  N=input.nextInt();
+  if(M==0 && N==0){
+
+    break;
+}
+      
+  
+  ck=0;
+  between=N-M;
+   if(between>=100) between-=100;
+   else if(between>=50)between-=50;
+   else if(between>=20)between-=20;
+   else if(between>=10)between-=10;
+   else if(between>=5)between-=5;
+   else if(between>=2)between-=2;
+   
+   
+  for(i=0;i<array.length;i++){
+      if(array[i]==between){
+          ck++;
+          break;
+      }
+  }
+  if(ck>0){
+      System.out.println("possible");
+  }else{
+      System.out.println("impossible");
+  }
+}
+}
+}
