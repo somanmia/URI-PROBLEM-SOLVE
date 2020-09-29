@@ -1,0 +1,72 @@
+public class Main{
+public static void main(String[]args){
+int row,col;
+for(row=0;row<7;row++){
+    for(col=0;col<39;col++){
+        if(row==0){
+            System.out.print("-");
+        }else if(row==6){
+           System.out.print("-");
+        }
+        else  if(col==0){
+            System.out.print("|");
+        }
+        //-row------------1=====//
+        else if(row==1){
+                   if((col>=1 && col<=8)||(col>=16 && col<=37)){
+              System.out.print(" ");
+              }else if(col==9){
+                System.out.print("Roberto");
+              }
+
+          else if(col==38){
+               System.out.print("|");
+         }
+
+        }
+
+      // row-------3=======//
+     else if(row==3){
+          if((col>=1 && col<=8)||(col>=13 && col<=37)){
+              System.out.print(" ");
+          }else if(col==9){
+            System.out.print("5786");
+          }
+
+          else if(col==38){
+               System.out.print("|");
+         }
+    }
+
+    //row ---- 5---===//
+
+     else if(row==5){
+          if((col>=1 && col<=8)||(col>=15 && col<=37)){
+              System.out.print(" ");
+          }else if(col==9){
+            System.out.print("UNIFEI");
+          }
+
+          else if(col==38){
+               System.out.print("|");
+         }
+    }
+
+
+   else if(col==38){
+               System.out.print("|");
+    }
+    else{
+      System.out.print(" ");
+
+    }
+    }
+    System.out.print("\n");
+}
+}
+
+}
+
+
+
+

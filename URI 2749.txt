@@ -1,0 +1,61 @@
+public class Main{
+  public static void main(String[]args){
+     int row,col;
+for(row=0;row<7;row++){
+    for(col=0;col<39;col++){
+        if(row==0 || row==6){
+            System.out.print("-");
+        }
+
+        else if(col==0){
+            System.out.print("|");
+
+        }
+        //1 row-----//
+        else if(row==1){
+
+            if(col==1){
+                System.out.print("x = 35");
+            }else if(col>=7 && col<=37){
+              System.out.print(" ");
+            }else if(col==38){
+              System.out.print("|");
+            }
+        }
+        //-- row=2,4---//
+        else if(row==2 || row==4){
+            if(col==38){
+                System.out.print("|");
+            }else{
+               System.out.print(" ");
+            }
+        }
+
+        //--- row-----3--//
+        if(row==3){
+            if((col>=1 && col<=15) || (col>=22 && col<=37)){
+                System.out.print(" ");
+            }else if(col==16){
+               System.out.print("x = 35");
+            }else if(col==38){
+              System.out.print("|");
+            }
+        }
+
+        if(row==5){
+            if(col>=1 && col<=31){
+                System.out.print(" ");
+            }else if(col==32){
+                System.out.print("x = 35");
+            }else if(col==38){
+               System.out.print("|");
+            }
+        }
+    }
+    System.out.print("\n");
+}
+  
+  }
+
+
+}
